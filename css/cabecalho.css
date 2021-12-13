@@ -1,0 +1,96 @@
+.cabecalho {
+    background-image: url(../imagens/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2.90% 0 7% 0;
+}
+.caixa {
+    width: 80%;
+    margin: 0 auto;
+}
+.cabecalho__navegacao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cabecalho__navegacao__botao-controla-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.cabecalho__navegacao__botao-controla-menu img {
+    vertical-align: middle;
+}
+.cabecalho__navegacao__menu-navegacao__lista {
+    display: flex;
+}
+.cabecalho__navegacao__menu-navegacao__lista__item {
+    margin-left: 1.50rem;
+}
+.cabecalho__navegacao__menu-navegacao__lista__item__ancora {
+    color: var(--white);
+    text-decoration: none;
+}
+.cabecalho__chamada {
+    width: 55%;
+    border: solid 2px var(--white);
+    box-sizing: border-box;
+    padding: 1.50rem;
+    margin-top: 8rem;
+}
+.cabecalho__chamada__texto {
+    font-size: 4.20rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--josefin-sans);
+}
+@media only screen and (max-width: 475px) {
+    .cabecalho {
+        padding: 7% 0 50% 0;
+    }
+    .cabecalho__navegacao__botao-controla-menu {
+        display: block;
+    }
+    .cabecalho__navegacao__menu-navegacao {
+        width: 100%;
+        margin-top: 1rem;
+        display: none;
+    }
+    .cabecalho__navegacao__menu-navegacao__lista {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .cabecalho__navegacao__menu-navegacao__lista__item {
+        margin: 1rem 0;
+    }
+    .cabecalho__navegacao__menu-navegacao__lista__item__ancora {
+        text-transform: uppercase;
+        font-size: 1.50rem;
+        font-family: var(--josefin-sans);
+    }
+    .cabecalho__chamada {
+        width: 100%;
+    }
+    .cabecalho__chamada__texto {
+        font-size: 2.23rem;
+    }
+    .cabecalho__navegacao.menu-ativo{
+        background-color: var(--black);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        padding: 0 10%;
+        box-sizing: border-box;
+    }
+    .cabecalho__navegacao.menu-ativo .cabecalho__navegacao__menu-navegacao {
+        display: block;
+    }
+}
