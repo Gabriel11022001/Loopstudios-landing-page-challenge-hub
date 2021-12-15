@@ -1,0 +1,103 @@
+.conteudo-principal__criacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 6rem 0;
+}
+.conteudo-principal__criacoes__titulo {
+    font-family: var(--josefin-sans);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.conteudo-principal__criacoes__ancora-ver-todos {
+    text-decoration: none;
+    background: none;
+    box-sizing: border-box;
+    padding: 0.60rem 1.80rem;
+    text-transform: uppercase;
+    color: var(--black);
+    border: solid 2px var(--black);
+    transition: all 0.3s ease-in-out;
+}
+.conteudo-principal__criacoes__ancora-ver-todos:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+.conteudo-principal__criacoes__catalogo {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.conteudo-principal__criacoes__catalogo__card {
+    width: 23%;
+    margin: 1rem 2.66% 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+.conteudo-principal__criacoes__catalogo__card:nth-child(4n) {
+    margin-right: 0;
+}
+.conteudo-principal__criacoes__catalogo__card__capa {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-opaco);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+.conteudo-principal__criacoes__catalogo__card__capa:hover {
+    background-color: var(--dark-gray-opaco);
+}
+.conteudo-principal__criacoes__catalogo__card__capa:hover .conteudo-principal__criacoes__catalogo__card__capa__texto {
+    color: var(--black);
+}
+.conteudo-principal__criacoes__catalogo__card__imagem {
+    width: 100%;
+    height: 100%;
+}
+.conteudo-principal__criacoes__catalogo__card__capa__texto {
+    color: var(--white);
+    font-size: 1.50rem;
+    text-transform: uppercase;
+    font-family: var(--josefin-sans);
+    margin: 0 0 1rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 475px) {
+    .conteudo-principal__criacoes {
+        flex-direction: column;
+    }
+    .conteudo-principal__criacoes__titulo {
+        text-align: center;
+        order: 0;
+    }
+    .conteudo-principal__criacoes__catalogo {
+        order: 1;
+    }
+    .conteudo-principal__criacoes__ancora-ver-todos {
+        order: 2;
+        padding: 0.80rem 2.50rem;
+        font-size: 1.20rem;
+    }
+    .conteudo-principal__criacoes__catalogo__card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+@media only screen and (min-width: 1550px) {
+    .conteudo-principal__criacoes__titulo {
+        font-size: 3rem;
+    }
+    .conteudo-principal__criacoes__ancora-ver-todos {
+        font-size: 2.20rem;
+    }
+    .conteudo-principal__criacoes__catalogo__card__capa__texto {
+        font-size: 2rem;
+    }
+}

@@ -45,3 +45,11 @@
         text-align: center;
     }
 }
+@media only screen and (min-width: 1500px) {
+    .conteudo-principal__sobre__descricao__titulo {
+        font-size: 4rem;
+    }
+    .conteudo-principal__sobre__descricao__texto {
+        font-size: 1.50rem;
+    }
+}
